@@ -23,7 +23,7 @@ def butter_lowpass_filter(data1, cutoff, fs, order=5):
 
 # Filter requirements.
 order = 6
-fs = 30.0       # sample rate, Hz
+fs = 125.0       # sample rate, Hz
 cutoff = 3.667  # desired cutoff frequency of the filter, Hz
 
 # Get the filter coefficients so we can check its frequency response.
@@ -42,7 +42,7 @@ plt.grid()
 
 # Data to be filtered.
 #Data Requirements
-T = 2000.0         # seconds
+T = 480.0         # seconds
 n = int(T * fs) # total number of samples
 t = np.linspace(0, T, n, endpoint=False)
 
